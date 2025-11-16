@@ -15,11 +15,13 @@ import {
   Bars3Icon,
   XMarkIcon,
   SparklesIcon,
+  VideoCameraIcon,
 } from '@heroicons/react/24/outline';
 
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
   { name: 'Learn', href: '/learn', icon: BookOpenIcon },
+  { name: 'YouTube Notebook', href: '/notebook', icon: VideoCameraIcon },
   { name: 'Quiz', href: '/quiz', icon: AcademicCapIcon },
   { name: 'Progress', href: '/progress', icon: ChartBarIcon },
   { name: 'Profile', href: '/profile', icon: UserCircleIcon },

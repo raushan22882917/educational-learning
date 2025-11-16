@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
 from sqlalchemy.exc import SQLAlchemyError
-from .api import auth, sessions, progress, recommendations, quiz, step_learning
+from .api import auth, sessions, progress, recommendations, quiz, step_learning, youtube_notebook
 from .database import engine, Base
 from .models import user, session, progress as progress_model, quiz as quiz_model, profile
 from .exceptions import (
@@ -205,6 +205,7 @@ app.include_router(progress.router)
 app.include_router(recommendations.router)
 app.include_router(quiz.router)
 app.include_router(step_learning.router)
+app.include_router(youtube_notebook.router)
 
 @app.get("/")
 async def root():

@@ -1,0 +1,41 @@
+############################
+# Root Git Ignore
+############################
+
+# Node.js dependencies
+node_modules/
+frontend/node_modules/
+
+# Python virtualenv
+backend/venv/
+venv/
+
+# Python caches
+**/__pycache__/
+*.py[cod]
+
+# Next.js / frontend build
+.next/
+out/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env / secrets
+.env
+.env.*
+
+# OS / misc
+.DS_Store
+Thumbs.db
+
+# Tooling
+.vercel
+.vscode/
+.idea/
+
+
